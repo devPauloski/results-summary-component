@@ -4,13 +4,13 @@ import data from "../public/data.json";
 const Result = () => {
   return (
     <section className="result-section">
-      <h1>Your Result</h1>
-      <p>
+      <h1 className="result-title">Your Result</h1>
+      <p className="result-score">
         <span>76</span>
         of 100
       </p>
-      <p>Great</p>
-      <p>
+      <p className="result-grade">Great</p>
+      <p className="result-description">
         You scored higher than 65% of the people who have taken these tests.
       </p>
     </section>
@@ -20,9 +20,9 @@ const Result = () => {
 const Summary = () => {
   return (
     <section className="summary-section">
-      <h2>Summary</h2>
+      <h2 className="summary-title">Summary</h2>
       <ResultList />
-      <button>Continue</button>
+      <button type="button">Continue</button>
     </section>
   );
 };
@@ -30,10 +30,10 @@ const Summary = () => {
 const ResultList = () => {
   const listItems = data.map((item) => {
     return (
-      <li key={item.id}>
-        <img src={item.icon} alt="" />
-        <p>{item.category}</p>
-        <p>
+      <li key={item.id} className="summary-category-item">
+        <img className="summary-category-icon" src={item.icon} alt="" />
+        <p className="summary-category-name">{item.category}</p>
+        <p className="summary-category-score">
           <span>{item.score}</span>
         </p>
       </li>

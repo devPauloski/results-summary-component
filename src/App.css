@@ -45,6 +45,7 @@ body {
 .wrapper {
   inline-size: min(90%, 46rem);
   margin-inline: auto;
+  background-color: var(--clr-white);
   display: grid;
 }
 
