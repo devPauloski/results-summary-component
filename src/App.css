@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 :root {
   /* Colors */
   --clr-light-red: hsl(0, 100%, 67%);
@@ -14,7 +21,7 @@
   --clr-dark-gray-blue: hsl(224, 30%, 27%);
 
   /* Typography */
-  --ff-hanken-grotesk: 'Hanken Grotesk', sans-serif;
+  --ff-hanken-grotesk: "Hanken Grotesk", sans-serif;
 
   --fs-body: 1.125rem;
 

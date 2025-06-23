@@ -1,5 +1,5 @@
 import "./App.css";
-import data from "./data/data.json";
+import data from "../public/data.json";
 
 const Result = () => {
   return (
@@ -57,17 +57,3 @@ const App = () => {
 };
 
 export default App;
-
-//   Reaction
-//   80 / 100
-
-//   Memory
-//   92 / 100
-
-//   Verbal
-//   61 / 100
-
-//   Visual
-//   72 / 100
-
-//   Continue
