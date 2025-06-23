@@ -1,0 +1,49 @@
+:root {
+  /* Colors */
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orangey-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+  --clr-light-slate-blue: hsl(252, 100%, 67%);
+  --clr-light-royal-blue: hsl(241, 81%, 54%);
+  --clr-violet-blue: hsla(256, 72%, 46%, 1);
+  --clr-persian-blue: hsla(241, 72%, 46%, 0); 
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-pale-blue: hsl(221, 100%, 96%);
+  --clr-light-lavender: hsl(241, 100%, 89%);
+  --clr-dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Typography */
+  --ff-hanken-grotesk: 'Hanken Grotesk', sans-serif;
+
+  --fs-body: 1.125rem;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+}
+
+/* Main Content */
+body {
+  font-family: var(--ff-hanken-grotesk);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  color: var(--clr-light-lavender);
+  background-color: var(--clr-pale-blue);
+  min-block-size: 100vh;
+  place-content: center;
+}
+
+.wrapper {
+  inline-size: min(90%, 46rem);
+  margin-inline: auto;
+  display: grid;
+}
+
+@media(min-width: 48em) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
