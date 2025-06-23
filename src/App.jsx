@@ -1,57 +1,6 @@
 import "./App.css";
-import data from "../public/data.json";
-
-const Result = () => {
-  return (
-    <section className="result-section">
-      <h1 className="result-title">Your Result</h1>
-      <p className="result-score">
-        <span>76</span><br/><span>of 100</span>
-      </p>
-      <p className="result-grade">Great</p>
-      <p className="result-description">
-        You scored higher than 65% of the people who have taken these tests.
-      </p>
-    </section>
-  );
-};
-
-const Summary = () => {
-  return (
-    <section className="summary-section">
-      <h2 className="summary-title">Summary</h2>
-      <ResultList />
-      <button className="button" type="button">Continue</button>
-    </section>
-  );
-};
-
-const ResultList = () => {
-  const listItems = data.map((item) => {
-    return (
-      <li 
-        key={item.id} 
-        className="summary-category-item"
-        style={{
-          backgroundColor: `${item.backgroundColor}`,
-          color: `${item.color}`
-        }}
-      >
-        <img className="summary-category-icon" src={item.icon} alt="" />
-        <p className="summary-category-name">{item.category}</p>
-        <p className="summary-category-score">
-          <span>{item.score}</span><span>/ 100</span> 
-        </p>
-      </li>
-    );
-  });
-
-  return (
-    <ul role="list" className="summary-category-list">
-      {listItems}
-    </ul>
-  );
-};
+import Result from "./result.jsx";
+import Summary from "./summary.jsx";
 
 const App = () => {
   return (
