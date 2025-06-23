@@ -26,7 +26,7 @@
   {
     "id": 4,
     "category": "Visual",
-    "score": 72,
+    "score": 73,
     "icon": "./assets/images/icon-visual.svg",
     "backgroundColor": "hsla(234, 85%, 45%, 0.05)",
     "color": "hsl(234, 85%, 45%)"
