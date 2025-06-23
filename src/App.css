@@ -19,6 +19,7 @@
   --clr-pale-blue: hsl(221, 100%, 96%);
   --clr-light-lavender: hsl(241, 100%, 89%);
   --clr-dark-gray-blue: hsl(224, 30%, 27%);
+  --clr-vivid-blue: hsl(246, 99%, 72%);
 
   /* Typography */
   --ff-hanken-grotesk: "Hanken Grotesk", sans-serif;
@@ -83,10 +84,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin-inline: auto;
+  margin-block-end: 1.75rem;
 }
 
-.result-score span {
-  
+.result-score span:first-child {
+  font-size: 2.75rem;
+  font-weight: var(--fw-extra-bold);
+  color: var(--clr-white);
 }
 
+.result-score span:last-child {
+  font-weight: var(--fw-bold);
+  color: var(--clr-vivid-blue);
+}
+
+.result-grade {
+  font-size: 1.375rem;
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+  margin-block-end: .5rem;
+}
+
+.result-description {
+  font-size: 1rem;
+}
