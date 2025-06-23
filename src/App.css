@@ -54,6 +54,8 @@ body {
     max-inline-size: 46rem;
     grid-template-columns: 1fr 1fr;
     border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
   }
 }
 
@@ -76,6 +78,7 @@ body {
   margin-block-end: 1.5rem;
   @media(min-width: 48em) {
     font-size: 1.5rem;
+    margin-block-end: 2.25rem;
   }
 }
 
@@ -85,10 +88,7 @@ body {
   aspect-ratio: 1;
   border-radius: 50%;
   background: linear-gradient(var(--clr-violet-blue), var(--clr-persian-blue));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  place-content: center;
   margin-inline: auto;
   margin-block-end: 1.75rem;
 }
@@ -111,6 +111,7 @@ body {
   margin-block-end: .5rem;
   @media(min-width: 48em) {
     font-size: 2rem;
+    margin-block-end: 1.5rem;
   }
 }
 
@@ -122,3 +123,72 @@ body {
     max-width: 24ch;
   }
 }
+
+.summary-section {
+  padding-inline: 2rem;
+  padding-block: 1.625rem;
+  @media(min-width: 48em) {
+    padding-block: 2.625rem;
+  }
+}
+
+.summary-title {
+  font-size: 1.25rem;
+  color: var(--clr-dark-gray-blue);
+  margin-block-end: 1rem;
+  font-weight: var(--fw-extra-bold);
+  @media(min-width: 48em) {
+    font-size: 1.5rem;
+  }
+}
+
+.summary-category-item {
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: .875rem;
+  border-radius: .5rem;
+}
+
+.summary-category-item:not(:last-child) {
+  margin-block-end: 1rem;
+}
+
+.summary-category-score {
+  margin-inline-start: auto;
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: var(--fw-bold);
+}
+
+.summary-category-score span:first-child {
+  color: var(--clr-dark-gray-blue);
+  margin-inline-end: .5rem;
+}
+
+.summary-category-list {
+  margin-block-end: 1.5rem;
+}
+
+.button {
+  cursor: pointer;
+  width: 100%;
+  background-color: var(--clr-dark-gray-blue);
+  color: var(--clr-white);
+  padding-block: .875rem;
+  border: 0;
+  border-radius: 100vmax;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background: linear-gradient(var(--clr-light-slate-blue), var(--clr-light-royal-blue));
+}
+
+.button:focus-visible {
+  outline: .125rem solid var(--clr-dark-gray-blue);
+  outline-offset: .125rem;
+}
+
