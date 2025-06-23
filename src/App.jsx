@@ -6,8 +6,7 @@ const Result = () => {
     <section className="result-section">
       <h1 className="result-title">Your Result</h1>
       <p className="result-score">
-        <span>76</span>
-        of 100
+        <span>76</span>of 100
       </p>
       <p className="result-grade">Great</p>
       <p className="result-description">
