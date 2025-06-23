@@ -2,14 +2,12 @@ import data from "../public/data.json";
 
 const ResultList = () => {
   const listItems = data.map((item) => {
+    let itemClassName = `${item.category.toLowerCase()}-item`;
+
     return (
       <li 
         key={item.id} 
-        className="summary-category-item"
-        style={{
-          backgroundColor: `${item.backgroundColor}`,
-          color: `${item.color}`
-        }}
+        className={`${itemClassName} summary-category-item`}
       >
         <img className="summary-category-icon" src={item.icon} alt="" />
         <p className="summary-category-name">{item.category}</p>
