@@ -100,8 +100,7 @@ body {
 }
 
 .result-score span:last-child {
-  font-weight: var(--fw-bold);
-  color: var(--clr-vivid-blue);
+  color: hsl(221, 100%, 96%, 0.85);
 }
 
 .result-grade {
@@ -119,6 +118,7 @@ body {
   font-size: 1rem;
   margin-inline: auto;
   max-width: 32ch;
+  color: hsla(0, 0%, 100%, 0.75);
   @media(min-width: 48em) {
     max-width: 24ch;
   }
