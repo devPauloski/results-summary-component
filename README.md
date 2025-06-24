@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Webpage preview](./public/image.png)
+![Webpage preview](/public/screenshot.png)
 
 ### Built with
 

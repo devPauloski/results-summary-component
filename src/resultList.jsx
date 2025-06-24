@@ -1,8 +1,8 @@
-import data from "../public/data.json";
+import data from "./data.json";
 
 const ResultList = () => {
   const listItems = data.map((item) => {
-    let itemClassName = `${item.category.toLowerCase()}-item`;
+    const itemClassName = `${item.category.toLowerCase()}-item`;
 
     return (
       <li 
